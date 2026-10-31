@@ -1,0 +1,54 @@
+{
+  "download_date": "2026-10-30",
+  "files": [
+    {
+      "file": "auto_mpg.csv",
+      "sha256": "998731a41b824206169dcf84b3a91048bc8d5b833f04b6935686e91664480021",
+      "rows": 398,
+      "columns": [
+        "mpg",
+        "cylinders",
+        "displacement",
+        "horsepower",
+        "weight",
+        "acceleration",
+        "model_year",
+        "origin",
+        "car_name"
+      ]
+    },
+    {
+      "file": "bank.csv",
+      "sha256": "dc8d576e9bda0f41ee891251bd84bab9a39ce576cba715aac08adc2374a01fde",
+      "rows": 4521,
+      "columns": [
+        "age",
+        "job",
+        "marital",
+        "education",
+        "default",
+        "balance",
+        "housing",
+        "loan",
+        "contact",
+        "day",
+        "month",
+        "duration",
+        "campaign",
+        "pdays",
+        "previous",
+        "poutcome",
+        "y"
+      ]
+    },
+    {
+      "file": "reviews.csv",
+      "sha256": "6e1e47d6633d04137d875ae66dbaecd5d7f805aa9502b8b75497345d51bb0032",
+      "rows": 1000,
+      "columns": [
+        "text",
+        "sentiment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+:root {
+  --ink: #17372f;
+  --muted: #5a7169;
+  --green: #087f75;
+  --line: #d6e3dc;
+  --bg: #f3f7f4;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font:
+    15px/1.6 system-ui,
+    -apple-system,
+    Segoe UI,
+    sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding: 22px max(22px, calc((100vw - 1000px) / 2));
+}
+.logo {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 800;
+}
+header strong {
+  font-size: 13px;
+}
+header small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+.badge {
+  margin-left: auto;
+  border: 1px solid #afd6c4;
+  border-radius: 20px;
+  color: var(--green);
+  padding: 6px 12px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+main {
+  max-width: 1050px;
+  padding: 38px 25px;
+  margin: auto;
+}
+.intro {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 38px;
+  letter-spacing: -1.3px;
+  line-height: 1.2;
+  margin: 8px 0 15px;
+}
+h2 {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px;
+}
+p {
+  color: var(--muted);
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  color: var(--green);
+  font-weight: 750;
+}
+.intro > p {
+  margin: 10px 0;
+}
+.intro #health {
+  font-size: 12px;
+  color: var(--green);
+}
+nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+nav button {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+nav button.active {
+  background: #dceee4;
+  border-color: #b9d6c8;
+  color: #185e49;
+  font-weight: 700;
+}
+.panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  border-radius: 12px;
+  padding: 30px;
+}
+.section-title {
+  max-width: 780px;
+  margin-bottom: 25px;
+}
+.section-title p {
+  font-size: 13px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+label {
+  font-size: 12px;
+  font-weight: 650;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+input,
+select,
+textarea {
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  background: #fbfdfb;
+  border: 1px solid #c7d9ce;
+  border-radius: 6px;
+  padding: 11px;
+  width: 100%;
+  min-width: 0;
+}
+textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+label small {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.run {
+  margin-top: 25px;
+  background: var(--green);
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  padding: 13px 20px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.run:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+.result {
+  margin-top: 25px;
+  padding: 18px 22px;
+  background: #f1f6f2;
+  border-radius: 8px;
+  min-height: 85px;
+}
+.result h3 {
+  margin: 0 0 8px;
+  font-size: 25px;
+}
+.result p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+.result.error {
+  background: #fff0eb;
+  color: #9b3f2c;
+}
+.result.error p {
+  color: inherit;
+}
+.probability {
+  height: 8px;
+  border-radius: 5px;
+  background: #d7e5dd;
+  overflow: hidden;
+  margin: 14px 0;
+}
+.probability span {
+  display: block;
+  height: 100%;
+  background: var(--green);
+}
+footer {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 25px;
+}
+a {
+  color: var(--green);
+}
+[hidden] {
+  display: none !important;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+@media (max-width: 650px) {
+  header {
+    padding: 16px;
+  }
+  .badge {
+    display: none;
+  }
+  main {
+    padding: 24px 16px;
+  }
+  h1 {
+    font-size: 29px;
+  }
+  .panel {
+    padding: 22px 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  nav button {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

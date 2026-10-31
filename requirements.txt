@@ -1,0 +1,7 @@
+-r requirements-web.txt
+matplotlib==3.10.8
+imbalanced-learn==0.14.0
+nltk==3.9.2
+xgboost==3.1.1
+lightgbm==4.6.0
+httpx==0.28.1

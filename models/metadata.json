@@ -1,0 +1,67 @@
+{
+  "seed": 42,
+  "test_fraction": 0.25,
+  "fuel": {
+    "features": [
+      "cylinders",
+      "displacement",
+      "horsepower",
+      "weight",
+      "acceleration",
+      "model_year"
+    ],
+    "model": "Multiple linear",
+    "metrics": {
+      "model": "Multiple linear",
+      "r2": 0.8271888215093182,
+      "mae": 2.52920607287822,
+      "rmse": 3.132543107253991
+    }
+  },
+  "bank": {
+    "features": [
+      "age",
+      "balance",
+      "campaign",
+      "pdays",
+      "previous"
+    ],
+    "model": "Numeric logistic baseline",
+    "default_threshold": 0.3,
+    "metrics": {
+      "accuracy": 0.8717948717948718,
+      "precision": 0.14285714285714285,
+      "recall": 0.023076923076923078,
+      "specificity": 0.9820179820179821,
+      "f1": 0.039735099337748346,
+      "roc_auc": 0.5960308921847384,
+      "brier": 0.10195146228089762,
+      "tn": 983,
+      "fp": 18,
+      "fn": 127,
+      "tp": 3
+    }
+  },
+  "sentiment": {
+    "model": "TF-IDF bigrams + logistic regression",
+    "metrics": {
+      "accuracy": 0.7871485943775101,
+      "precision": 0.7903225806451613,
+      "recall": 0.784,
+      "specificity": 0.7903225806451613,
+      "f1": 0.7871485943775101,
+      "roc_auc": 0.8641290322580645,
+      "brier": 0.1893864565188183,
+      "tn": 98,
+      "fp": 26,
+      "fn": 27,
+      "tp": 98
+    }
+  },
+  "versions": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "joblib": "1.5.3"
+  }
+}

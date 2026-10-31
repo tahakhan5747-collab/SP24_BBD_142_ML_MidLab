@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ML Lab · Prediction demo</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header>
+      <span class="logo">ML</span>
+      <div>
+        <strong>Business Data Analytics</strong
+        ><small>COMSATS University Islamabad · Machine Learning Lab</small>
+      </div>
+      <span class="badge">NOTEBOOK FIRST</span>
+    </header>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">A SMALL INTEGRATION DEMONSTRATION</p>
+        <h1>Three models. Three predictions.</h1>
+        <p>
+          The main analysis is in
+          <strong>notebook/ML_Lab_Project.ipynb</strong>. This page sends inputs
+          to FastAPI, which loads the pipelines exported by that notebook.
+        </p>
+        <p id="health" role="status">Checking exported models…</p>
+      </section>
+      <nav aria-label="Prediction task">
+        <button class="active" data-tab="fuel" type="button">
+          01 · Fuel efficiency</button
+        ><button data-tab="bank" type="button">02 · Bank subscription</button
+        ><button data-tab="sentiment" type="button">
+          03 · Review sentiment
+        </button>
+      </nav>
+      <section id="fuel" class="panel">
+        <div class="section-title">
+          <p class="eyebrow">REGRESSION · AUTO MPG</p>
+          <h2>Estimate fuel efficiency</h2>
+          <p>
+            Six vehicle measurements predict miles per gallon. Model year uses
+            the original two-digit format (70–82).
+          </p>
+        </div>
+        <form data-task="fuel">
+          <div class="grid">
+            <label
+              >Cylinders<select name="cylinders">
+                <option>3</option>
+                <option selected>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>8</option>
+              </select></label
+            >
+            <label
+              >Displacement (cubic inches)<input
+                name="displacement"
+                type="number"
+                value="140"
+                min="1"
+                max="600"
+                step="any"
+                required
+            /></label>
+            <label
+              >Horsepower<input
+                name="horsepower"
+                type="number"
+                value="90"
+                min="1"
+                max="400"
+                step="any"
+                required
+            /></label>
+            <label
+              >Weight (lb)<input
+                name="weight"
+                type="number"
+                value="2500"
+                min="500"
+                max="8000"
+                step="any"
+                required
+            /></label>
+            <label
+              >Acceleration (seconds)<input
+                name="acceleration"
+                type="number"
+                value="16"
+                min="0.1"
+                max="40"
+                step="any"
+                required
+            /></label>
+            <label
+              >Model year (70–82)<input
+                name="model_year"
+                type="number"
+                value="76"
+                min="70"
+                max="82"
+                required
+            /></label>
+          </div>
+          <button type="submit" class="run">Predict MPG →</button>
+        </form>
+        <div class="result" id="fuel-result" role="status" aria-live="polite">
+          <p>Your model prediction will appear here.</p>
+        </div>
+      </section>
+      <section id="bank" class="panel" hidden>
+        <div class="section-title">
+          <p class="eyebrow">CLASSIFICATION · BANK MARKETING</p>
+          <h2>Estimate subscription likelihood</h2>
+          <p>
+            This deliberately small model uses five numeric features. It differs
+            from the full mixed-feature model evaluated in the notebook. No call
+            duration is used.
+          </p>
+        </div>
+        <form data-task="bank">
+          <div class="grid">
+            <label
+              >Age<input
+                name="age"
+                type="number"
+                value="35"
+                min="18"
+                max="100"
+                required
+            /></label>
+            <label
+              >Account balance<input
+                name="balance"
+                type="number"
+                value="1500"
+                min="-10000"
+                max="1000000"
+                step="any"
+                required
+            /></label>
+            <label
+              >Contacts in this campaign<input
+                name="campaign"
+                type="number"
+                value="1"
+                min="1"
+                max="100"
+                required
+            /></label>
+            <label
+              >Days since previous contact<input
+                name="pdays"
+                type="number"
+                value="-1"
+                min="-1"
+                max="1000"
+                required
+              /><small>Use −1 if not previously contacted.</small></label
+            >
+            <label
+              >Earlier campaign contacts<input
+                name="previous"
+                type="number"
+                value="0"
+                min="0"
+                max="100"
+                required
+            /></label>
+            <label
+              >Decision threshold<input
+                name="threshold"
+                type="number"
+                value="0.3"
+                min="0.01"
+                max="0.99"
+                step="any"
+                required
+              /><small
+                >Probability at or above this value predicts
+                subscription.</small
+              ></label
+            >
+          </div>
+          <button type="submit" class="run">Predict subscription →</button>
+        </form>
+        <div class="result" id="bank-result" role="status" aria-live="polite">
+          <p>Your model prediction will appear here.</p>
+        </div>
+      </section>
+      <section id="sentiment" class="panel" hidden>
+        <div class="section-title">
+          <p class="eyebrow">TEXT CLASSIFICATION · REAL YELP SENTENCES</p>
+          <h2>Read a customer review</h2>
+          <p>
+            TF-IDF word and phrase features feed a logistic regression
+            classifier. It estimates positive sentiment; it does not understand
+            every context.
+          </p>
+        </div>
+        <form data-task="sentiment">
+          <label
+            >Your review<textarea name="text" maxlength="2000" required>
+The food was delicious and the service was friendly.</textarea
+            ></label
+          ><button type="submit" class="run">Predict sentiment →</button>
+        </form>
+        <div
+          class="result"
+          id="sentiment-result"
+          role="status"
+          aria-live="polite"
+        >
+          <p>Your model prediction will appear here.</p>
+        </div>
+      </section>
+      <footer>
+        All preparation, comparisons, charts and interpretations are in the
+        notebook.<br />Real datasets · Fixed train/test split · No invented
+        fallback predictions ·
+        <a href="/docs" target="_blank" rel="noopener"
+          >FastAPI documentation ↗</a
+        >
+      </footer>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

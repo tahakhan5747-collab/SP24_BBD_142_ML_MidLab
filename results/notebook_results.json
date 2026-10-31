@@ -1,0 +1,1085 @@
+{
+  "deletion": [
+    {
+      "split": "train",
+      "before": 298,
+      "after": 293
+    },
+    {
+      "split": "test",
+      "before": 100,
+      "after": 99
+    }
+  ],
+  "imputation": [
+    {
+      "method": "mean",
+      "train_replacement": 103.2116040956,
+      "test_missing_after": 0
+    },
+    {
+      "method": "median",
+      "train_replacement": 92.0,
+      "test_missing_after": 0
+    },
+    {
+      "method": "most_frequent",
+      "train_replacement": 90.0,
+      "test_missing_after": 0
+    }
+  ],
+  "categorical_mode": [
+    {
+      "column": "education",
+      "training_missing": 142,
+      "replacement": "secondary"
+    }
+  ],
+  "knn_imputation": [
+    {
+      "row": 336,
+      "horsepower_estimate": 91.2
+    },
+    {
+      "row": 374,
+      "horsepower_estimate": 77.2
+    },
+    {
+      "row": 32,
+      "horsepower_estimate": 63.8
+    },
+    {
+      "row": 354,
+      "horsepower_estimate": 76.4
+    },
+    {
+      "row": 330,
+      "horsepower_estimate": 63.2
+    }
+  ],
+  "synthetic_ordered_fill": [
+    {
+      "date": "2026-01-01",
+      "original": 10.0,
+      "forward_fill": 10.0,
+      "backward_fill": 10.0,
+      "interpolation": 10.0
+    },
+    {
+      "date": "2026-01-02",
+      "original": null,
+      "forward_fill": 10.0,
+      "backward_fill": 14.0,
+      "interpolation": 12.0
+    },
+    {
+      "date": "2026-01-03",
+      "original": 14.0,
+      "forward_fill": 14.0,
+      "backward_fill": 14.0,
+      "interpolation": 14.0
+    },
+    {
+      "date": "2026-01-04",
+      "original": null,
+      "forward_fill": 14.0,
+      "backward_fill": 20.0,
+      "interpolation": 16.0
+    },
+    {
+      "date": "2026-01-05",
+      "original": null,
+      "forward_fill": 14.0,
+      "backward_fill": 20.0,
+      "interpolation": 18.0
+    },
+    {
+      "date": "2026-01-06",
+      "original": 20.0,
+      "forward_fill": 20.0,
+      "backward_fill": 20.0,
+      "interpolation": 20.0
+    },
+    {
+      "date": "2026-01-07",
+      "original": null,
+      "forward_fill": 20.0,
+      "backward_fill": null,
+      "interpolation": null
+    }
+  ],
+  "scaling": [
+    {
+      "weight_before": 1795.0,
+      "minmax": 0.051601928,
+      "standard": -1.4214741434,
+      "robust": -0.7856625634
+    },
+    {
+      "weight_before": 2625.0,
+      "minmax": 0.2869294018,
+      "standard": -0.424752967,
+      "robust": -0.1846488052
+    },
+    {
+      "weight_before": 2634.0,
+      "minmax": 0.2894811454,
+      "standard": -0.4139451471,
+      "robust": -0.1781317886
+    },
+    {
+      "weight_before": 3940.0,
+      "minmax": 0.6597675078,
+      "standard": 1.1543896195,
+      "robust": 0.7675597393
+    },
+    {
+      "weight_before": 4237.0,
+      "minmax": 0.7439750496,
+      "standard": 1.511047679,
+      "robust": 0.9826212889
+    }
+  ],
+  "encoding": [
+    {
+      "job": "management",
+      "label_demo": 4,
+      "count": 755,
+      "frequency": 0.2227138643
+    },
+    {
+      "job": "retired",
+      "label_demo": 5,
+      "count": 154,
+      "frequency": 0.0454277286
+    },
+    {
+      "job": "management",
+      "label_demo": 4,
+      "count": 755,
+      "frequency": 0.2227138643
+    },
+    {
+      "job": "management",
+      "label_demo": 4,
+      "count": 755,
+      "frequency": 0.2227138643
+    },
+    {
+      "job": "technician",
+      "label_demo": 9,
+      "count": 600,
+      "frequency": 0.1769911504
+    },
+    {
+      "job": "student",
+      "label_demo": 8,
+      "count": 55,
+      "frequency": 0.0162241888
+    },
+    {
+      "job": "services",
+      "label_demo": 7,
+      "count": 303,
+      "frequency": 0.089380531
+    },
+    {
+      "job": "blue-collar",
+      "label_demo": 1,
+      "count": 723,
+      "frequency": 0.2132743363
+    }
+  ],
+  "rfe": [
+    {
+      "feature": "age",
+      "selected": true,
+      "rank": 1
+    },
+    {
+      "feature": "balance",
+      "selected": false,
+      "rank": 3
+    },
+    {
+      "feature": "campaign",
+      "selected": true,
+      "rank": 1
+    },
+    {
+      "feature": "pdays",
+      "selected": false,
+      "rank": 2
+    },
+    {
+      "feature": "previous",
+      "selected": true,
+      "rank": 1
+    }
+  ],
+  "numeric_importance": [
+    {
+      "feature": "age",
+      "importance": 0.2972200426
+    },
+    {
+      "feature": "balance",
+      "importance": 0.225248114
+    },
+    {
+      "feature": "campaign",
+      "importance": 0.0696957699
+    },
+    {
+      "feature": "pdays",
+      "importance": 0.2691668763
+    },
+    {
+      "feature": "previous",
+      "importance": 0.1386691971
+    }
+  ],
+  "pca": [
+    {
+      "component": 1,
+      "variance_explained": 0.3256544674
+    },
+    {
+      "component": 2,
+      "variance_explained": 0.2161648039
+    }
+  ],
+  "regression": [
+    {
+      "model": "Simple linear",
+      "r2": 0.7277224618,
+      "mae": 3.2109200449,
+      "rmse": 3.9320320381
+    },
+    {
+      "model": "Multiple linear",
+      "r2": 0.8271888215,
+      "mae": 2.5292060729,
+      "rmse": 3.1325431073
+    },
+    {
+      "model": "Polynomial degree 2",
+      "r2": 0.7625871311,
+      "mae": 2.8432626808,
+      "rmse": 3.6716668474
+    },
+    {
+      "model": "Ridge",
+      "r2": 0.82732503,
+      "mae": 2.5300238017,
+      "rmse": 3.1313083402
+    },
+    {
+      "model": "Lasso",
+      "r2": 0.8337628362,
+      "mae": 2.3900491058,
+      "rmse": 3.0723819178
+    },
+    {
+      "model": "Regression tree",
+      "r2": 0.7915100579,
+      "mae": 2.408425031,
+      "rmse": 3.4407545632
+    }
+  ],
+  "complexity": [
+    {
+      "degree": 1,
+      "train_rmse": 4.4634788586,
+      "test_rmse": 3.9320320381
+    },
+    {
+      "degree": 2,
+      "train_rmse": 4.3266297986,
+      "test_rmse": 3.6716668474
+    },
+    {
+      "degree": 3,
+      "train_rmse": 4.3255182619,
+      "test_rmse": 3.6813446417
+    },
+    {
+      "degree": 5,
+      "train_rmse": 4.3209144446,
+      "test_rmse": 3.672565999
+    },
+    {
+      "degree": 10,
+      "train_rmse": 4.3102622387,
+      "test_rmse": 3.6264724713
+    },
+    {
+      "degree": 15,
+      "train_rmse": 4.3030757525,
+      "test_rmse": 3.5803592788
+    }
+  ],
+  "classification": [
+    {
+      "threshold": 0.2,
+      "accuracy": 0.848806366,
+      "precision": 0.3277310924,
+      "recall": 0.3,
+      "specificity": 0.9200799201,
+      "f1": 0.313253012,
+      "roc_auc": 0.7002151694,
+      "brier": 0.0941742407,
+      "tn": 921,
+      "fp": 80,
+      "fn": 91,
+      "tp": 39
+    },
+    {
+      "threshold": 0.3,
+      "accuracy": 0.8726790451,
+      "precision": 0.4,
+      "recall": 0.2153846154,
+      "specificity": 0.958041958,
+      "f1": 0.28,
+      "roc_auc": 0.7002151694,
+      "brier": 0.0941742407,
+      "tn": 959,
+      "fp": 42,
+      "fn": 102,
+      "tp": 28
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8877099912,
+      "precision": 0.5405405405,
+      "recall": 0.1538461538,
+      "specificity": 0.983016983,
+      "f1": 0.2395209581,
+      "roc_auc": 0.7002151694,
+      "brier": 0.0941742407,
+      "tn": 984,
+      "fp": 17,
+      "fn": 110,
+      "tp": 20
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 0.8885941645,
+      "precision": 0.625,
+      "recall": 0.0769230769,
+      "specificity": 0.994005994,
+      "f1": 0.1369863014,
+      "roc_auc": 0.7002151694,
+      "brier": 0.0941742407,
+      "tn": 995,
+      "fp": 6,
+      "fn": 120,
+      "tp": 10
+    }
+  ],
+  "trees": [
+    {
+      "model": "Tree Gini",
+      "train_accuracy": 0.8982300885,
+      "accuracy": 0.8726790451,
+      "precision": 0.4,
+      "recall": 0.2153846154,
+      "specificity": 0.958041958,
+      "f1": 0.28,
+      "roc_auc": 0.6076730961,
+      "brier": 0.0987020716,
+      "tn": 959,
+      "fp": 42,
+      "fn": 102,
+      "tp": 28
+    },
+    {
+      "model": "Tree entropy",
+      "train_accuracy": 0.8982300885,
+      "accuracy": 0.8726790451,
+      "precision": 0.4,
+      "recall": 0.2153846154,
+      "specificity": 0.958041958,
+      "f1": 0.28,
+      "roc_auc": 0.6476907708,
+      "brier": 0.0979576811,
+      "tn": 959,
+      "fp": 42,
+      "fn": 102,
+      "tp": 28
+    },
+    {
+      "model": "Unrestricted tree",
+      "train_accuracy": 1.0,
+      "accuracy": 0.8152077807,
+      "precision": 0.2116788321,
+      "recall": 0.2230769231,
+      "specificity": 0.8921078921,
+      "f1": 0.2172284644,
+      "roc_auc": 0.5575924076,
+      "brier": 0.1847922193,
+      "tn": 893,
+      "fp": 108,
+      "fn": 101,
+      "tp": 29
+    },
+    {
+      "model": "Pruned tree",
+      "train_accuracy": 0.8958702065,
+      "accuracy": 0.8806366048,
+      "precision": 0.4590163934,
+      "recall": 0.2153846154,
+      "specificity": 0.967032967,
+      "f1": 0.2931937173,
+      "roc_auc": 0.6652731884,
+      "brier": 0.0947378734,
+      "tn": 968,
+      "fp": 33,
+      "fn": 102,
+      "tp": 28
+    }
+  ],
+  "tree_math": [
+    {
+      "root_split": "poutcome_success <= 0.5000",
+      "entropy": 0.5158135549,
+      "gini": 0.2040721887,
+      "weighted_child_entropy": 0.4790432532,
+      "information_gain": 0.0367703017
+    }
+  ],
+  "ensembles": [
+    {
+      "model": "Random forest",
+      "accuracy": 0.8903625111,
+      "precision": 0.6363636364,
+      "recall": 0.1076923077,
+      "specificity": 0.992007992,
+      "f1": 0.1842105263,
+      "roc_auc": 0.7045800353,
+      "brier": 0.0917316704,
+      "tn": 993,
+      "fp": 8,
+      "fn": 116,
+      "tp": 14
+    },
+    {
+      "model": "AdaBoost",
+      "accuracy": 0.8903625111,
+      "precision": 0.6,
+      "recall": 0.1384615385,
+      "specificity": 0.988011988,
+      "f1": 0.225,
+      "roc_auc": 0.7055060324,
+      "brier": 0.1067633694,
+      "tn": 989,
+      "fp": 12,
+      "fn": 112,
+      "tp": 18
+    },
+    {
+      "model": "Gradient boosting",
+      "accuracy": 0.8903625111,
+      "precision": 0.5833333333,
+      "recall": 0.1615384615,
+      "specificity": 0.985014985,
+      "f1": 0.2530120482,
+      "roc_auc": 0.7129370629,
+      "brier": 0.0931710287,
+      "tn": 986,
+      "fp": 15,
+      "fn": 109,
+      "tp": 21
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.8824049514,
+      "precision": 0.4594594595,
+      "recall": 0.1307692308,
+      "specificity": 0.98001998,
+      "f1": 0.2035928144,
+      "roc_auc": 0.6962268501,
+      "brier": 0.0938929787,
+      "tn": 981,
+      "fp": 20,
+      "fn": 113,
+      "tp": 17
+    },
+    {
+      "model": "LightGBM",
+      "accuracy": 0.8859416446,
+      "precision": 0.5128205128,
+      "recall": 0.1538461538,
+      "specificity": 0.981018981,
+      "f1": 0.2366863905,
+      "roc_auc": 0.6998001998,
+      "brier": 0.0931261973,
+      "tn": 982,
+      "fp": 19,
+      "fn": 110,
+      "tp": 20
+    }
+  ],
+  "svm_nb": [
+    {
+      "model": "SVM linear",
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.4520364251,
+      "brier": 0.1017697009,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "model": "SVM polynomial",
+      "accuracy": 0.8815207781,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 0.996003996,
+      "f1": 0.0,
+      "roc_auc": 0.5362983171,
+      "brier": 0.1042010716,
+      "tn": 997,
+      "fp": 4,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "model": "SVM RBF",
+      "accuracy": 0.884173298,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 0.999000999,
+      "f1": 0.0,
+      "roc_auc": 0.5526435103,
+      "brier": 0.1019045275,
+      "tn": 1000,
+      "fp": 1,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "model": "RBF balanced",
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.6473949128,
+      "brier": 0.0968451704,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "model": "Gaussian NB",
+      "accuracy": 0.8275862069,
+      "precision": 0.2072072072,
+      "recall": 0.1769230769,
+      "specificity": 0.9120879121,
+      "f1": 0.1908713693,
+      "roc_auc": 0.6249788673,
+      "brier": 0.1359920483,
+      "tn": 913,
+      "fp": 88,
+      "fn": 107,
+      "tp": 23
+    },
+    {
+      "model": "RBF unscaled",
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.4269691847,
+      "brier": 0.1017350637,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    }
+  ],
+  "svm_decisions": [
+    {
+      "model": "SVM linear",
+      "positive_by_predict": 0,
+      "positive_by_probability_0_5": 0
+    },
+    {
+      "model": "SVM polynomial",
+      "positive_by_predict": 0,
+      "positive_by_probability_0_5": 4
+    },
+    {
+      "model": "SVM RBF",
+      "positive_by_predict": 1,
+      "positive_by_probability_0_5": 1
+    },
+    {
+      "model": "RBF balanced",
+      "positive_by_predict": 186,
+      "positive_by_probability_0_5": 0
+    },
+    {
+      "model": "Gaussian NB",
+      "positive_by_predict": 111,
+      "positive_by_probability_0_5": 111
+    }
+  ],
+  "svm_sensitivity": [
+    {
+      "C": 0.1,
+      "gamma": 0.01,
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.4964535465,
+      "brier": 0.1017837236,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "C": 1.0,
+      "gamma": 0.01,
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.579378314,
+      "brier": 0.10177422,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "C": 10.0,
+      "gamma": 0.01,
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.6137055252,
+      "brier": 0.1017794549,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "C": 1.0,
+      "gamma": 1.0,
+      "accuracy": 0.8868258179,
+      "precision": 1.0,
+      "recall": 0.0153846154,
+      "specificity": 1.0,
+      "f1": 0.0303030303,
+      "roc_auc": 0.5191462384,
+      "brier": 0.0991260678,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 128,
+      "tp": 2
+    }
+  ],
+  "imbalance": [
+    {
+      "model": "Majority baseline",
+      "threshold": 0.5,
+      "accuracy": 0.8850574713,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "brier": 0.1017309012,
+      "tn": 1001,
+      "fp": 0,
+      "fn": 130,
+      "tp": 0
+    },
+    {
+      "model": "Logistic baseline",
+      "threshold": 0.5,
+      "accuracy": 0.8806366048,
+      "precision": 0.1428571429,
+      "recall": 0.0076923077,
+      "specificity": 0.994005994,
+      "f1": 0.0145985401,
+      "roc_auc": 0.5960308922,
+      "brier": 0.1019514623,
+      "tn": 995,
+      "fp": 6,
+      "fn": 129,
+      "tp": 1
+    },
+    {
+      "model": "Class weighting",
+      "threshold": 0.5,
+      "accuracy": 0.6878868258,
+      "precision": 0.1710914454,
+      "recall": 0.4461538462,
+      "specificity": 0.7192807193,
+      "f1": 0.2473347548,
+      "roc_auc": 0.6031622224,
+      "brier": 0.2393482403,
+      "tn": 720,
+      "fp": 281,
+      "fn": 72,
+      "tp": 58
+    },
+    {
+      "model": "SMOTE",
+      "threshold": 0.5,
+      "accuracy": 0.6728558798,
+      "precision": 0.1685082873,
+      "recall": 0.4692307692,
+      "specificity": 0.6993006993,
+      "f1": 0.2479674797,
+      "roc_auc": 0.6010182126,
+      "brier": 0.2383718505,
+      "tn": 700,
+      "fp": 301,
+      "fn": 69,
+      "tp": 61
+    },
+    {
+      "model": "Weighted + calibration",
+      "threshold": 0.5,
+      "accuracy": 0.8797524315,
+      "precision": 0.125,
+      "recall": 0.0076923077,
+      "specificity": 0.993006993,
+      "f1": 0.0144927536,
+      "roc_auc": 0.6030930608,
+      "brier": 0.1025132791,
+      "tn": 994,
+      "fp": 7,
+      "fn": 129,
+      "tp": 1
+    },
+    {
+      "model": "Baseline threshold 0.3",
+      "threshold": 0.3,
+      "accuracy": 0.8717948718,
+      "precision": 0.1428571429,
+      "recall": 0.0230769231,
+      "specificity": 0.982017982,
+      "f1": 0.0397350993,
+      "roc_auc": 0.5960308922,
+      "brier": 0.1019514623,
+      "tn": 983,
+      "fp": 18,
+      "fn": 127,
+      "tp": 3
+    }
+  ],
+  "class_counts": [
+    {
+      "split": "train original",
+      "no": 2999,
+      "yes": 391
+    },
+    {
+      "split": "train after SMOTE",
+      "no": 2999,
+      "yes": 2999
+    },
+    {
+      "split": "test unchanged",
+      "no": 1001,
+      "yes": 130
+    }
+  ],
+  "text_vectors": [
+    {
+      "term": "love",
+      "count": 1,
+      "tfidf": 0.4797923801
+    },
+    {
+      "term": "the",
+      "count": 1,
+      "tfidf": 0.1768195188
+    },
+    {
+      "term": "margaritas",
+      "count": 1,
+      "tfidf": 0.6767093995
+    },
+    {
+      "term": "too",
+      "count": 1,
+      "tfidf": 0.529715507
+    }
+  ],
+  "token_normalization": [
+    {
+      "token": "the",
+      "stem": "the",
+      "lemma": "the"
+    },
+    {
+      "token": "waiters",
+      "stem": "waiter",
+      "lemma": "waiter"
+    },
+    {
+      "token": "were",
+      "stem": "were",
+      "lemma": "be"
+    },
+    {
+      "token": "running",
+      "stem": "run",
+      "lemma": "run"
+    },
+    {
+      "token": "and",
+      "stem": "and",
+      "lemma": "and"
+    },
+    {
+      "token": "the",
+      "stem": "the",
+      "lemma": "the"
+    },
+    {
+      "token": "meals",
+      "stem": "meal",
+      "lemma": "meal"
+    },
+    {
+      "token": "were",
+      "stem": "were",
+      "lemma": "be"
+    },
+    {
+      "token": "not",
+      "stem": "not",
+      "lemma": "not"
+    },
+    {
+      "token": "good",
+      "stem": "good",
+      "lemma": "good"
+    }
+  ],
+  "text_models": [
+    {
+      "model": "Bag of words",
+      "accuracy": 0.8072289157,
+      "precision": 0.8130081301,
+      "recall": 0.8,
+      "specificity": 0.814516129,
+      "f1": 0.8064516129,
+      "roc_auc": 0.8890322581,
+      "brier": 0.1355694249,
+      "tn": 101,
+      "fp": 23,
+      "fn": 25,
+      "tp": 100
+    },
+    {
+      "model": "Stop words removed",
+      "accuracy": 0.8192771084,
+      "precision": 0.8174603175,
+      "recall": 0.824,
+      "specificity": 0.814516129,
+      "f1": 0.8207171315,
+      "roc_auc": 0.8950645161,
+      "brier": 0.1366076302,
+      "tn": 101,
+      "fp": 23,
+      "fn": 22,
+      "tp": 103
+    },
+    {
+      "model": "TF-IDF",
+      "accuracy": 0.7751004016,
+      "precision": 0.7948717949,
+      "recall": 0.744,
+      "specificity": 0.8064516129,
+      "f1": 0.7685950413,
+      "roc_auc": 0.8699354839,
+      "brier": 0.1744069527,
+      "tn": 100,
+      "fp": 24,
+      "fn": 32,
+      "tp": 93
+    },
+    {
+      "model": "TF-IDF bigrams",
+      "accuracy": 0.7871485944,
+      "precision": 0.7903225806,
+      "recall": 0.784,
+      "specificity": 0.7903225806,
+      "f1": 0.7871485944,
+      "roc_auc": 0.8641290323,
+      "brier": 0.1893864565,
+      "tn": 98,
+      "fp": 26,
+      "fn": 27,
+      "tp": 98
+    },
+    {
+      "model": "Stemming",
+      "accuracy": 0.7791164659,
+      "precision": 0.7966101695,
+      "recall": 0.752,
+      "specificity": 0.8064516129,
+      "f1": 0.7736625514,
+      "roc_auc": 0.876,
+      "brier": 0.1718597236,
+      "tn": 100,
+      "fp": 24,
+      "fn": 31,
+      "tp": 94
+    },
+    {
+      "model": "Lemmatization",
+      "accuracy": 0.8032128514,
+      "precision": 0.8333333333,
+      "recall": 0.76,
+      "specificity": 0.8467741935,
+      "f1": 0.7949790795,
+      "roc_auc": 0.8836129032,
+      "brier": 0.1697885962,
+      "tn": 105,
+      "fp": 19,
+      "fn": 30,
+      "tp": 95
+    },
+    {
+      "model": "TF-IDF max_df=0.3",
+      "accuracy": 0.7951807229,
+      "precision": 0.8083333333,
+      "recall": 0.776,
+      "specificity": 0.814516129,
+      "f1": 0.7918367347,
+      "roc_auc": 0.8752258065,
+      "brier": 0.1751556919,
+      "tn": 101,
+      "fp": 23,
+      "fn": 28,
+      "tp": 97
+    },
+    {
+      "model": "Linear SVM calibrated",
+      "accuracy": 0.8112449799,
+      "precision": 0.825,
+      "recall": 0.792,
+      "specificity": 0.8306451613,
+      "f1": 0.8081632653,
+      "roc_auc": 0.8978064516,
+      "brier": 0.133884096,
+      "tn": 103,
+      "fp": 21,
+      "fn": 26,
+      "tp": 99
+    },
+    {
+      "model": "Multinomial NB alpha=1",
+      "accuracy": 0.7791164659,
+      "precision": 0.7692307692,
+      "recall": 0.8,
+      "specificity": 0.7580645161,
+      "f1": 0.7843137255,
+      "roc_auc": 0.8822580645,
+      "brier": 0.1437109817,
+      "tn": 94,
+      "fp": 30,
+      "fn": 25,
+      "tp": 100
+    },
+    {
+      "model": "Multinomial NB alpha=0.1",
+      "accuracy": 0.8032128514,
+      "precision": 0.8166666667,
+      "recall": 0.784,
+      "specificity": 0.8225806452,
+      "f1": 0.8,
+      "roc_auc": 0.8812903226,
+      "brier": 0.1576606183,
+      "tn": 102,
+      "fp": 22,
+      "fn": 27,
+      "tp": 98
+    }
+  ],
+  "influential_terms": [
+    {
+      "direction": "negative",
+      "term": "not",
+      "coefficient": -2.3005972544
+    },
+    {
+      "direction": "negative",
+      "term": "terrible",
+      "coefficient": -0.9760556921
+    },
+    {
+      "direction": "negative",
+      "term": "don",
+      "coefficient": -0.962642031
+    },
+    {
+      "direction": "negative",
+      "term": "there",
+      "coefficient": -0.9368537595
+    },
+    {
+      "direction": "negative",
+      "term": "bad",
+      "coefficient": -0.9185089726
+    },
+    {
+      "direction": "negative",
+      "term": "worst",
+      "coefficient": -0.8624551327
+    },
+    {
+      "direction": "positive",
+      "term": "great",
+      "coefficient": 2.4519763412
+    },
+    {
+      "direction": "positive",
+      "term": "good",
+      "coefficient": 2.0151613133
+    },
+    {
+      "direction": "positive",
+      "term": "delicious",
+      "coefficient": 1.2959651195
+    },
+    {
+      "direction": "positive",
+      "term": "amazing",
+      "coefficient": 1.1511249999
+    },
+    {
+      "direction": "positive",
+      "term": "fantastic",
+      "coefficient": 1.1029795679
+    },
+    {
+      "direction": "positive",
+      "term": "is",
+      "coefficient": 1.0037169628
+    }
+  ]
+}
